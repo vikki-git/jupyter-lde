@@ -1,0 +1,11 @@
+version: '3'
+services:
+        jupyter:
+                image: jupyter/tensorflow-notebook
+                ports:
+                - 8888
+                container_name: jupyter
+                volumes:
+                - .:/home/jovyan
+                command: "start-notebook.sh \
+                          --NotebookApp.password='sha1:26f1463c6242:0a2efa424b36831de28d19fc27742594ddaac1fa1'"
