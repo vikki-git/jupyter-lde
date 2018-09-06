@@ -9,3 +9,7 @@ services:
                 - ${LOCAL_WORKING_DIR}:/home/jovyan
                 command: "start-notebook.sh \
                           --NotebookApp.password=${ACCESS_TOKEN}"
+        python:
+                image: python:3.7.0
+                stdin_open: true
+                tty: true
