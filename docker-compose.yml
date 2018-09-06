@@ -4,7 +4,6 @@ services:
                 image: jupyter/tensorflow-notebook
                 ports:
                 - 8888
-                container_name: jupyter
                 volumes:
                 - ${LOCAL_WORKING_DIR}:/home/jovyan
                 command: "start-notebook.sh \
