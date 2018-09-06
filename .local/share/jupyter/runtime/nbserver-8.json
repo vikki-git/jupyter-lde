@@ -3,7 +3,7 @@
   "hostname": "localhost",
   "notebook_dir": "/home/jovyan",
   "password": true,
-  "pid": 7,
+  "pid": 8,
   "port": 8888,
   "secure": false,
   "token": "",
